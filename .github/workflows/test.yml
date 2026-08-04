@@ -3,7 +3,7 @@ on: push
 jobs:
   test-lint:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/head/main'
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Run Test
         run: echo 'Running test...'
