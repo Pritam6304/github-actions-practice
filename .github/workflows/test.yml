@@ -10,4 +10,4 @@ jobs:
       - name: Run List
         run: echo 'Running lint'
       - name: Log details
-        run: ${{toJson(github)}}
+        run: echo '${{toJson(github)}}'
