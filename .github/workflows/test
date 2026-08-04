@@ -1,0 +1,13 @@
+name: Test Workflow
+on: push
+jobs:
+  test-lint:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/head/main'
+    steps:
+      - name: Run Test
+        run: echo 'Running test...'
+      - name: Run List
+        run: echo 'Running lint'
+      - name: Log details
+        run: ${{toJson(github)}}
