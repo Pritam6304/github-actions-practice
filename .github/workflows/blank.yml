@@ -8,7 +8,9 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        os: ['ubuntu-latest', 'windows-latest']
+        os: [ubuntu-latest, windows-latest]
+        include:
+          - os: ubuntu-latest
     steps:
       - name: Run Test
         run: |
