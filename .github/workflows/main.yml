@@ -1,0 +1,13 @@
+name: Main Workflow
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+        uses: actions/checkout@7
+      - name: Test Code
+        run: echo 'Testing Code'
+  running-build:
+    uses: ./.github/workflows/blank.yml
+      
