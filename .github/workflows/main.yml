@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
-        uses: actions/checkout@7
+        uses: actions/checkout@v7
       - name: Test Code
         run: echo 'Testing Code'
   running-build:
